@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custom Greeting</title>
+</head>
+<body>
+
+    <h1>Custom Greeting</h1>
+    
+    <script>
+
+        var today = new Date();
+        console.log(today);
+
+        var hour = today.getHours();
+        document.write("<p>The current hour is " + hour + ".</p>");
+
+        var day = today.getDay();
+        document.write("<p>The current day is " + day + ".</p>");
+        day = 5;
+
+        if(day == 6 || day == 0)
+        {
+            document.write("<p>It’s the weekend!!!</p>");
+        }
+        else if(day == 1)
+        {
+            document.write("<p>Do you have a case of the Mondays?</p>");
+        }
+        else if(day == 5 && hour > 12)
+        {
+            document.write("<p>It’s almost the weekend!</p>");
+        }
+        else if(hour > 12)
+        {
+            document.write("<p>Have a good day!</p>");
+        }
+        else
+        {
+            document.write("<p>Have a good morning!</p>");
+        }
+
+    </script>
+
+</body>
+</html>
