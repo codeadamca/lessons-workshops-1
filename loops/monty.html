@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Monty Hall Question</title>
+</head>
+<body>
+
+    <h1>The Monty Hall Question</h1>
+
+    <script>
+
+        let total = 10000;
+        let change = 0;
+        let totalDoors = 4;
+
+        for(let i = 0; i < total; i ++)
+        {
+
+            let winningDoor = Math.ceil( Math.random() * totalDoors );
+            document.write("The car is behind door " + winningDoor);
+
+            let guess = Math.ceil( Math.random() * totalDoors );
+            document.write("<br>The guess is " + guess);
+
+            /*
+            let removeDoor;
+            do
+            {
+                removeDoor = Math.ceil( Math.random() * totalDoors );
+            }
+            while(removeDoor == guess || removeDoor == winningDoor);
+            document.write("<br>Host removes door " + removeDoor);
+            */
+
+            if(winningDoor == guess)
+            {
+                document.write("<br><font color='green'>Contestant should stay!</font>");
+            }
+            else
+            {
+                document.write("<br><font color='red'>Contestant should switch!</font>");
+                change ++;
+            }
+
+            document.write("<hr>");
+
+        }
+
+        document.write("<h2>Change: " + (change / total * 100) + "%")
+
+    </script>
+    
+</body>
+</html>
