@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+</head>
+<body>
+    
+
+    <h1>Loops and Arrays</h1>
+
+    <script>
+
+    var links = [];
+
+    links[0] = {
+        name: "W3Schools",
+        url: "http://www.w3schools.com/",
+        description: "W3Schools is a web developer information website, with tutorials and references relating to web development topics such as HTML, CSS, JavaScript and PHP."
+    };
+    links[1] = {
+        name: "Codecademy",
+        url: "https://www.codecademy.com/",
+        description: "Codecademy is an online interactive platform that offers free coding classes in 9 different programming languages."
+    };
+
+    links[2] = {
+        name: "W3",
+        url: "http://www.w3.org/",
+        description: "The World Wide Web Consortium is the main international standards organization for the World Wide Web."
+    }
+
+    // livecode.codeadam.ca
+
+    for(let i = 0; i < links.length; i ++)
+    {
+
+        document.write("<h2>" + links[i].name + "</h2>");
+        document.write("<a href='" + links[i].url + "'>" + links[i].url + "</a>");
+        document.write("<p>" + links[i].description + "</p>");
+
+    }
+
+    links.forEach(function(item, index){
+
+        // console.log(item);
+        // console.log(index);
+
+        document.write("<h2>" + item.name + "</h2>");
+        document.write("<a href='" + item.url + "'>" + item.url + "</a>");
+        document.write("<p>" + item.description + "</p>");
+
+    });
+
+    </script>
+    
+</body>
+</html>
