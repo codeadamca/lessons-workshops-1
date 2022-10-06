@@ -9,7 +9,7 @@
 
     <script>
 
-        let categories = {
+        let categoriesJSON = {
                 "categories" : [
                     {
                         "name" : "Climbing",
@@ -155,10 +155,28 @@
                 ]
             };
 
-        console.log(categories);
+        
+
+        function outputCategories(categories) {
+            document.write("<ul>");
+            for(var i = 0; i < categories.length; i ++)
+            {
+                document.write("<li>" + categories[i].name);
+                if(categories[i].categories)
+                {
+                    outputCategories(categories[i].categories);
+                }
+                document.write("</li>");
+            }
+            document.write("</ul>");
+        }
+
+        outputCategories(categoriesJSON.categories);
 
 
     </script>
+
+    <p>Output the JavaScript object of categories in the following HTML format:</p>
 
     <ul>
         <li>Cat 1
