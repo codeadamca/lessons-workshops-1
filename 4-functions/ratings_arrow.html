@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ratings Arrow Function</title>
+</head>
+<body>
+
+    <h1>Ratings Arrow Function</h1>
+
+    <script>
+
+        const ratings = (rating, length) =>
+            Array.from({length})
+                .map((_, i) => (i < rating) ? '&starf;' : '&star;')
+                .join(' ');
+   
+        document.write(ratings(3, 5));
+
+    </script>
+    
+</body>
+</html>
