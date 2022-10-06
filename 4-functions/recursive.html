@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recursive Code</title>
+</head>
+<body>
+
+    <h1>Recursive Code</h1>
+
+    <script>
+
+        let categories = {
+                "categories" : [
+                    {
+                        "name" : "Climbing",
+                        "categories" : [
+                            {
+                                "name" : "Hardware",
+                                "categories" : [
+                                    {
+                                        "name" : "Carabiners"
+                                    },
+                                    {
+                                        "name" : "Quickdraws"
+                                    },
+                                    {
+                                        "name" : "Pulleys"
+                                    }
+                                ]
+
+                            },
+                            {
+                                "name" : "Ropes",
+                                "categories" : [
+                                    {
+                                        "name" : "Dynamic Ropes"
+                                    },
+                                    {
+                                        "name" : "Static Ropes",
+                                        "categories" : [
+                                            {
+                                                "name" : "Slings and Webbing",
+                                                "categories" : [
+                                                    {
+                                                        "name" : "Daisy Chain"
+                                                    },
+                                                    {
+                                                        "name" : "Slings"
+                                                    },
+                                                    {
+                                                        "name" : "Personal Anchors"
+                                                    },
+                                                    {
+                                                        "name" : "Aids"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name" : "Cordelettes"
+                                            },
+                                            {
+                                                "name" : "Rope"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name" : "Essentials",
+                                "categories" : [
+                                    {
+                                        "name" : "Helmets"
+                                    },
+                                    {
+                                        "name" : "Chalk"
+                                    },
+                                    {
+                                        "name" : "Bags"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name" : "Camping",
+                        "categories" : [
+                            {
+                                "name" : "Tents",
+                                "categories" : [
+                                    {
+                                        "name" : "Family Tents"
+                                    },
+                                    {
+                                        "name" : "Tree Tents"
+                                    },
+                                    {
+                                        "name" : "Tarps"
+                                    }
+                                ]
+                            },
+                            {
+                                "name" : "Backpacks"
+                            },
+                            {
+                                "name" : "Sleeping Bags"
+                            },
+                            {
+                                "name" : "Hammocks"
+                            }
+                        ]
+                        
+                    },
+                    {
+                        "name" : "Biking",
+                        "categories" : [
+                            {
+                                "name" : "Bikes",
+                                "categories" : [
+                                    {
+                                        "name" : "Road Bikes"
+                                    },
+                                    {
+                                        "name" : "Mountain Bikes"
+                                    },
+                                    {
+                                        "name" : "Commuter Bikes"
+                                    }
+                                ]
+                            },
+                            {
+                                "name" : "Helmets"
+                            },
+                            {
+                                "name" : "Lights"
+                            },
+                            {
+                                "name" : "Parts",
+                                "categories" : [
+                                    {
+                                        "name" : "Tires"
+                                    },
+                                    {
+                                        "name" : "Tubes"
+                                    },
+                                    {
+                                        "name" : "Sprockets"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name" : "Snow"
+                    }
+                ]
+            };
+
+        console.log(categories);
+
+
+    </script>
+
+    <ul>
+        <li>Cat 1
+            <ul>
+                <li>Sub Cat 1</li>
+                <li>Sub Cat 2
+                    <ul>
+                        <li>Sub Sub Cat 1</li>
+                    </ul>
+                </li>
+                <li>Sub Cat 3</li>        
+            </ul>
+        </li>
+        <li>Cat 2</li>
+        <li>Cat 3</li>
+        <li>Cat 4</li>
+    </ul>
+    
+</body>
+</html>
