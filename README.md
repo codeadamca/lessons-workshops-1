@@ -1,5 +1,7 @@
 # Workshops Lesson Content
 
+A collection of files coded while teaching a workshops class.
+
 ## Requirements:
 
 * [JavaScript on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
