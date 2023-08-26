@@ -2,7 +2,9 @@
 
 A collection of files coded while teaching a workshops class.
 
-## Requirements:
+***
+
+## Repo Resources
 
 * [JavaScript on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [JavaScript on W3Schools](https://www.w3schools.com/js/)
