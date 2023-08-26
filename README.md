@@ -1,4 +1,4 @@
-# Workshops Lesson Content
+# Workshops Lesson Files
 
 A collection of files coded while teaching a workshops class.
 
